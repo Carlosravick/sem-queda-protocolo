@@ -441,21 +441,27 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 15 — SOBRE A MENTORA */}
+      {/* SEÇÃO 15 — COMENTÁRIOS SOBRE O PRODUTO */}
       <section className="bg-secondary/50 px-5 py-14">
         <div className="mx-auto max-w-xl">
-          <SectionTitle>Sobre a mentora</SectionTitle>
-          <div className="mt-6 flex flex-col gap-5 rounded-2xl border border-dashed border-primary/25 bg-card p-6 sm:flex-row sm:items-start">
-            <div
-              aria-hidden
-              className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl border border-border bg-secondary text-xs uppercase tracking-[0.14em] text-muted-foreground"
-            >
-              foto
-            </div>
-            <div>
-              <p className="font-serif text-xl text-foreground">[NOME]</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">[BIO]</p>
-            </div>
+          <SectionTitle>Quem usou, aprovou</SectionTitle>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Espaço reservado para comentários reais de quem concluiu os 21 dias.
+          </p>
+          <div className="mt-7 space-y-4">
+            <TestimonialPlaceholder
+              featured
+              context="Espaço reservado para um comentário real sobre os resultados que o Protocolo 21 Dias Sem Queda trouxe na queda de cabelo."
+            />
+            <TestimonialPlaceholder
+              context="Espaço reservado para um comentário real de quem notou a queda diminuir ao longo das semanas."
+            />
+            <TestimonialPlaceholder
+              context="Espaço reservado para um comentário real sobre como foi fácil seguir o protocolo."
+            />
+            <TestimonialPlaceholder
+              context="Espaço reservado para um comentário real de quem recomenda o produto."
+            />
           </div>
         </div>
       </section>
