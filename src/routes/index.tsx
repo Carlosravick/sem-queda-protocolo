@@ -11,6 +11,12 @@ import {
 import { WeekTracker } from "@/components/landing/WeekTracker";
 import { TestimonialPlaceholder } from "@/components/landing/TestimonialPlaceholder";
 import { PriceOffer } from "@/components/landing/PriceOffer";
+import { BookMockup } from "@/components/landing/BookMockup";
+import coverProtocolo from "@/assets/cover-protocolo.jpg";
+import coverBonus1 from "@/assets/cover-bonus-1.jpg";
+import coverBonus2 from "@/assets/cover-bonus-2.jpg";
+import coverBonus3 from "@/assets/cover-bonus-3.jpg";
+import coverBonus4 from "@/assets/cover-bonus-4.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,32 +69,38 @@ const deliverables = [
     title: "Protocolo 21 Dias Sem Queda",
     text: "Checklist diário com 2 ações simples (corpo + mente), dividido em 3 semanas. Menos de 10 minutos por dia, sem produto caro.",
     highlight: false,
+    cover: coverProtocolo,
   },
   {
     tag: "Bônus 01",
     title: "Por Que Isso Está Acontecendo com Você",
     text: 'O mapa do ciclo ansiedade-queda, pra você entender que não é genético nem definitivo. Elimina a dúvida: "será que isso funciona pro meu caso".',
     highlight: false,
+    cover: coverBonus1,
   },
   {
     tag: "Bônus 02",
     title: "Cardápio Anti-Queda de 7 Dias",
     text: "Refeições prontas com os nutrientes que mais apoiam a saúde do fio. Economiza o tempo de pesquisar o que comer.",
     highlight: false,
+    cover: coverBonus2,
   },
   {
     tag: "Bônus 03",
     title: "Os 7 Erros que Pioram a Queda por Estresse",
     text: "Lista direta do que evitar — e o que fazer no lugar. Evita que você piore sem perceber.",
     highlight: false,
+    cover: coverBonus3,
   },
   {
     tag: "Bônus 04",
     title: "Diário de Progresso Visual",
     text: 'Tracker diário pra acompanhar queda, estresse e hábitos ao longo dos 21 dias. Você vê o progresso real, em vez de só "achar" que talvez esteja melhor.',
     highlight: true,
+    cover: coverBonus4,
   },
 ];
+
 
 const forWhom = [
   "Para quem sente a queda aumentar em período de estresse ou ansiedade — não é da sua cabeça, é o corpo reagindo.",
