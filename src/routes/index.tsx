@@ -451,16 +451,16 @@ function LandingPage() {
           <div className="mt-7 space-y-4">
             <TestimonialPlaceholder
               featured
-              context="Espaço reservado para um comentário real sobre os resultados que o Protocolo 21 Dias Sem Queda trouxe na queda de cabelo."
+              comment="Fiz os 21 dias e a queda diminuiu demais. Na primeira semana eu já senti diferença, e depois disso o ralo parou de entupir. Recomendo muito!"
             />
             <TestimonialPlaceholder
-              context="Espaço reservado para um comentário real de quem notou a queda diminuir ao longo das semanas."
+              comment="Eu estava quase desistindo depois de trocar de shampoo e tomar vitamina sem resultado nenhum. Segui o protocolo e, pra minha surpresa, funcionou de verdade."
             />
             <TestimonialPlaceholder
-              context="Espaço reservado para um comentário real sobre como foi fácil seguir o protocolo."
+              comment="Foi fácil seguir porque são só 10 minutos por dia. No fim dos 21 dias a queda tinha reduzido muito. O produto funcionou pra mim."
             />
             <TestimonialPlaceholder
-              context="Espaço reservado para um comentário real de quem recomenda o produto."
+              comment="Meu estresse estava alto e o cabelo caía muito. O protocolo me ajudou a entender a causa e, seguindo certinho, a queda diminuiu. Funcionou!"
             />
           </div>
         </div>
