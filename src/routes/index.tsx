@@ -169,7 +169,7 @@ function LandingPage() {
     const el = heroRef.current;
     if (!el) return;
     const observer = new IntersectionObserver(
-      ([entry]) => setShowSticky(!entry.isIntersecting),
+      ([entry]) => setShowSticky(entry ? !entry.isIntersecting : false),
       { threshold: 0 },
     );
     observer.observe(el);
