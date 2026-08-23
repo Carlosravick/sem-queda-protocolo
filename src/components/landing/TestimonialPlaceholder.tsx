@@ -33,9 +33,11 @@ export function TestimonialPlaceholder({ featured = false, context, comment }: P
             <div className="h-2.5 w-20 rounded-full bg-secondary/70" />
           </div>
         </div>
-        <span className="rounded-full bg-accent px-2.5 py-1 text-[0.62rem] uppercase tracking-[0.14em] text-accent-foreground">
-          em breve
-        </span>
+        {!comment && (
+          <span className="rounded-full bg-accent px-2.5 py-1 text-[0.62rem] uppercase tracking-[0.14em] text-accent-foreground">
+            em breve
+          </span>
+        )}
       </div>
 
       {comment ? (

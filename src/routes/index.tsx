@@ -246,21 +246,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 5 — PROVA SOCIAL (placeholder) */}
-      <section className="px-5 pb-14">
-        <div className="mx-auto max-w-xl">
-          <SectionTitle>O que estão dizendo</SectionTitle>
-          <p className="mt-3 text-xs text-muted-foreground">
-            Espaço reservado para depoimentos reais de quem concluiu os 21 dias.
-          </p>
-          <div className="mt-6 space-y-4">
-            <TestimonialPlaceholder />
-            <TestimonialPlaceholder />
-            <TestimonialPlaceholder />
-          </div>
-        </div>
-      </section>
-
       {/* SEÇÃO 6 — AGITAÇÃO DA DOR */}
       <section className="bg-gradient-hero px-5 py-14">
         <div className="mx-auto max-w-xl space-y-4 text-primary-foreground/90">
@@ -279,16 +264,6 @@ function LandingPage() {
             E é isso que você vai encontrar no Protocolo 21 Dias Sem Queda: um caminho que trata a
             causa — o estresse — não só o sintoma.
           </p>
-        </div>
-      </section>
-
-      {/* SEÇÃO 7 — DEPOIMENTO CONTEXTUALIZADO (placeholder) */}
-      <section className="px-5 py-14">
-        <div className="mx-auto max-w-xl">
-          <TestimonialPlaceholder
-            featured
-            context="Espaço reservado para um depoimento em destaque sobre a mudança na queda ao longo do protocolo."
-          />
         </div>
       </section>
 
@@ -331,16 +306,6 @@ function LandingPage() {
           <Button asChild variant="cta" size="xl" className="mt-8 w-full">
             <a href="#">Quero acesso ao Protocolo + aos 4 bônus</a>
           </Button>
-        </div>
-      </section>
-
-      {/* SEÇÃO 9 — DEPOIMENTO LIGADO AO BÔNUS 4 (placeholder) */}
-      <section className="px-5 py-14">
-        <div className="mx-auto max-w-xl">
-          <TestimonialPlaceholder
-            featured
-            context="Espaço reservado para um depoimento sobre o uso do Diário de Progresso Visual."
-          />
         </div>
       </section>
 
