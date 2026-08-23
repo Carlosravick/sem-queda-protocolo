@@ -18,7 +18,7 @@ function AvatarGeneric() {
   );
 }
 
-export function TestimonialPlaceholder({ featured = false, context }: Props) {
+export function TestimonialPlaceholder({ featured = false, context, comment }: Props) {
   return (
     <figure
       className={`rounded-2xl border border-dashed border-primary/25 bg-card p-5 ${
@@ -38,12 +38,18 @@ export function TestimonialPlaceholder({ featured = false, context }: Props) {
         </span>
       </div>
 
-      <div className={`mt-5 space-y-2.5 ${featured ? "sm:mt-6" : ""}`}>
-        <div className="h-2.5 w-full rounded-full bg-secondary" />
-        <div className="h-2.5 w-11/12 rounded-full bg-secondary" />
-        <div className="h-2.5 w-9/12 rounded-full bg-secondary/70" />
-        {featured && <div className="h-2.5 w-10/12 rounded-full bg-secondary/70" />}
-      </div>
+      {comment ? (
+        <blockquote className="mt-5 text-sm leading-relaxed text-foreground">
+          {comment}
+        </blockquote>
+      ) : (
+        <div className={`mt-5 space-y-2.5 ${featured ? "sm:mt-6" : ""}`}>
+          <div className="h-2.5 w-full rounded-full bg-secondary" />
+          <div className="h-2.5 w-11/12 rounded-full bg-secondary" />
+          <div className="h-2.5 w-9/12 rounded-full bg-secondary/70" />
+          {featured && <div className="h-2.5 w-10/12 rounded-full bg-secondary/70" />}
+        </div>
+      )}
 
       {context && (
         <figcaption className="mt-5 border-t border-border pt-4 text-xs leading-relaxed text-muted-foreground">
