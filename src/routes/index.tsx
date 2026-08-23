@@ -451,16 +451,16 @@ function LandingPage() {
           <div className="mt-7 space-y-4">
             <TestimonialPlaceholder
               featured
-              comment="Fiz os 21 dias e a queda diminuiu demais. Na primeira semana eu já senti diferença, e depois disso o ralo parou de entupir. Recomendo muito!"
+              comment="Eu confesso que não estava acreditando muito, só fui acreditar de verdade quando vi o cabelo parando de cair. Na segunda semana já deu pra notar a diferença no ralo."
             />
             <TestimonialPlaceholder
-              comment="Eu estava quase desistindo depois de trocar de shampoo e tomar vitamina sem resultado nenhum. Segui o protocolo e, pra minha surpresa, funcionou de verdade."
+              comment="No começo achei que não ia dar resultado, mas deu uma reduzida boa mesmo. Com o passar dos dias o cabelo foi parando de cair e eu nem acreditava."
             />
             <TestimonialPlaceholder
-              comment="Foi fácil seguir porque são só 10 minutos por dia. No fim dos 21 dias a queda tinha reduzido muito. O produto funcionou pra mim."
+              comment="Pra mim o protocolo realmente fez diferença. Eu seguia contando os fios toda vez, e agora vejo bem menos queda do que antes de começar."
             />
             <TestimonialPlaceholder
-              comment="Meu estresse estava alto e o cabelo caía muito. O protocolo me ajudou a entender a causa e, seguindo certinho, a queda diminuiu. Funcionou!"
+              comment="Seguindo certinho os 21 dias, a queda diminuiu muito. Quando percebi que o cabelo parou de cair do jeito que caía, senti que valeu cada minuto."
             />
           </div>
         </div>
