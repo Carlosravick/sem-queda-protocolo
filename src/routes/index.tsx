@@ -285,35 +285,47 @@ function LandingPage() {
           <SectionTitle>
             O que você vai encontrar dentro do Protocolo 21 Dias Sem Queda
           </SectionTitle>
-          <div className="mt-7 space-y-4">
+          <div className="mt-8 space-y-6">
             {deliverables.map((item) => (
               <article
                 key={item.tag}
                 className={
                   item.highlight
-                    ? "rounded-2xl border-2 border-accent-foreground/40 bg-accent p-6 shadow-lift"
-                    : "rounded-2xl border border-border bg-card p-5 shadow-soft"
+                    ? "rounded-2xl border-2 border-accent-foreground/40 bg-accent p-6 pb-8 shadow-lift"
+                    : "rounded-2xl border border-border bg-card p-5 pb-8 shadow-soft"
                 }
               >
-                <p
-                  className={`text-[0.65rem] uppercase tracking-[0.18em] ${
-                    item.highlight ? "text-accent-foreground" : "text-muted-foreground"
-                  }`}
-                >
-                  {item.tag}
-                  {item.highlight && " — bônus irresistível"}
-                </p>
-                <h3
-                  className={`mt-2 font-serif ${
-                    item.highlight ? "text-2xl text-foreground" : "text-lg text-foreground"
-                  }`}
-                >
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+                <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:gap-6">
+                  <BookMockup
+                    src={item.cover}
+                    alt={`Mockup da capa: ${item.title}`}
+                    className={item.highlight ? "w-40 sm:w-44" : "w-32 sm:w-36"}
+                  />
+                  <div className="text-center sm:text-left">
+                    <p
+                      className={`text-[0.65rem] uppercase tracking-[0.18em] ${
+                        item.highlight ? "text-accent-foreground" : "text-muted-foreground"
+                      }`}
+                    >
+                      {item.tag}
+                      {item.highlight && " — bônus irresistível"}
+                    </p>
+                    <h3
+                      className={`mt-2 font-serif ${
+                        item.highlight ? "text-2xl text-foreground" : "text-lg text-foreground"
+                      }`}
+                    >
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.text}
+                    </p>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
+
 
           <Button asChild variant="cta" size="xl" className="mt-8 w-full">
             <a href="#">Quero acesso ao Protocolo + aos 4 bônus</a>
