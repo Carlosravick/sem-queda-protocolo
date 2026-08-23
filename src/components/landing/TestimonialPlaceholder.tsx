@@ -1,6 +1,7 @@
 type Props = {
   featured?: boolean;
   context?: string;
+  comment?: string;
 };
 
 function AvatarGeneric() {
