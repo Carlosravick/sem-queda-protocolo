@@ -299,7 +299,11 @@ function LandingPage() {
                   <BookMockup
                     src={item.cover}
                     alt={`Mockup da capa: ${item.title}`}
-                    className={item.highlight ? "w-40 sm:w-44" : "w-32 sm:w-36"}
+                    className={
+                      item.highlight
+                        ? "w-52 shrink-0 sm:w-48"
+                        : "w-44 shrink-0 sm:w-40"
+                    }
                   />
                   <div className="text-center sm:text-left">
                     <p
